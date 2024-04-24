@@ -1,22 +1,20 @@
 import os
 os.system("cls")
 import pygame
+# import sys
 
 # instalasi
 pygame.init()
 
 # mengatur ukuran layar/screen
 
-height = 600
-width = 600
-
-screen = pygame.display.set_mode([height,width])
+screen = pygame.display.set_mode([600, 600])
 
 # mengubah warna screen
-screen.fill((200,30,5))
+screen.fill(("#FDFFC2"))
 
 # buat lingkaran
-pygame.draw.circle(screen, (0,0,255), (300,300), 100)
+pygame.draw.circle(screen, ("red"), (300,300), 100)
 
 # agar screen tampil terus (tidak langung close/menghilang)
 running = True
