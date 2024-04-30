@@ -21,17 +21,17 @@ class Square(pygame.sprite.Sprite):
 
 
 def Update():
-    win.blit(bg, (0, 0))
-    square_group.draw(win)
+    screen.blit(bg, (0, 0))
+    square_group.draw(screen)
     square_group.update()
     pygame.display.update()
 
 
-WIDTH = 500
-HEIGHT = 500
+width = 500
+height = 500
 
-win = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Tic Tac Toe')
+screen = pygame.display.set_mode((width, height))
+pygame.display.set_caption("Limitless Tic Tac Toe")
 clock = pygame.time.Clock()
 
 blank_image = pygame.image.load('Blank.png')
@@ -39,7 +39,7 @@ X_image = pygame.image.load('x.png')
 O_image = pygame.image.load('o.png')
 bg = pygame.image.load('background.png')
 
-bg = pygame.transform.scale(bg, (WIDTH, HEIGHT))
+bg = pygame.transform.scale(bg, (width, height))
 
 square_group = pygame.sprite.Group()
 squares = []
